@@ -1,0 +1,65 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_US
+
+\documentclass[13pt,t]{beamer}
+	\usepackage[utf8]{inputenc}
+
+	% Import constants.
+	\input{../config.tex}
+
+	% Import own commands.
+	\input{../commands.tex}
+
+	\usepackage{sansmathaccent}
+	\pdfmapfile{+sansmathaccent.map}
+
+	% presentation style
+	\mode<presentation>
+	\usetheme{Madrid}
+	\usecolortheme[named=blue]{structure}
+	\usefonttheme[onlymath]{serif}
+	\useinnertheme{circles}
+	\useoutertheme{infolines}
+	\setbeamertemplate{blocks}[rounded][shadow=true]
+	
+	%remove default navigation in the bottom right corner
+	\beamertemplatenavigationsymbolsempty		
+	
+	% PDF settings
+	\hypersetup{
+		pdftitle = {\Title},
+		pdfsubject = {\ThesisType},
+		pdfauthor = {\Author},
+		pdfkeywords = {\Keywords},
+	}
+
+\begin{document}
+	\title{\Title}
+	\subtitle{\ThesisType}
+	\date{\DateOfSubmission}
+	\author{\Author}
+
+	\begin{frame}
+		\titlepage
+
+		\begin{center}
+			\includegraphics[width=100px]{../figures/logo}
+			~ \\
+			Faculty for Computer Science, Electrical Engineering and Mathematics \\
+			Department of Computer Science \\
+			\ResearchGroup \\
+			\Address
+		\end{center}
+	\end{frame}
+
+% table of contents
+	\begin{frame}
+		\frametitle{Contents}
+		\tableofcontents
+	\end{frame}
+
+% Include sections
+	\input{sections/introduction}
+	%TODO add more sections
+
+\end{document}

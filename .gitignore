@@ -1,0 +1,14 @@
+*.aux
+*.bib.sav
+*.bib.bak
+*.bbl
+*.blg
+*.nav
+*.out
+*.lot
+*.log
+*.lof
+*.pdf
+*.snm
+*.synctex.gz
+*.toc
